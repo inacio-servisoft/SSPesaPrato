@@ -277,7 +277,17 @@ end;
 
 procedure TfrmPesarPrato.Timer1Timer(Sender: TObject);
 begin
-  prc_Pesar;
+  if vPeso = vPesoAtual then
+  then
+  begin
+    Label3.Caption := 'RETIRE O PRATO DA BALANÇA!';
+    Exit;
+  end
+  else
+  begin
+    prc_Pesar;
+    Label3.Caption := 'COLOQUE O PRATO NA BALANÇA!';
+  end;
 end;
 
 procedure TfrmPesarPrato.prc_Pesar;

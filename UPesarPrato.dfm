@@ -12,6 +12,7 @@ object frmPesarPrato: TfrmPesarPrato
   Font.Style = []
   KeyPreview = True
   OldCreateOrder = False
+  WindowState = wsMaximized
   OnClose = FormClose
   OnShow = FormShow
   PixelsPerInch = 96
@@ -32,7 +33,7 @@ object frmPesarPrato: TfrmPesarPrato
     ParentFont = False
     TabOrder = 0
     UseDockManager = True
-    Version = '2.0.1.0'
+    Version = '1.6.0.3'
     Caption.Color = clHighlight
     Caption.ColorTo = clNone
     Caption.Font.Charset = DEFAULT_CHARSET
@@ -364,11 +365,16 @@ object frmPesarPrato: TfrmPesarPrato
       UseDockManager = False
       ParentBackground = False
       TabOrder = 0
+      DesignSize = (
+        943
+        75)
       object Label3: TLabel
-        Left = 136
-        Top = 11
-        Width = 733
+        Left = 11
+        Top = 13
+        Width = 921
         Height = 48
+        Alignment = taCenter
+        Anchors = [akLeft, akTop, akRight]
         Caption = 'COLOQUE O PRATO NA BALAN'#199'A'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlue
@@ -457,7 +463,7 @@ object frmPesarPrato: TfrmPesarPrato
     Top = 137
   end
   object ACBrBAL1: TACBrBAL
-    Porta = 'COM1'
+    Porta = 'COM2'
     Intervalo = 2000
     Device.Baud = 2400
     OnLePeso = ACBrBAL1LePeso

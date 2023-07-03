@@ -20,7 +20,13 @@ uses
   uUtilBematech in '..\SSNFCe\uUtilBematech.pas',
   uCupomFiscalParcela in '..\SSNFCe\uCupomFiscalParcela.pas' {fCupomFiscalParcela},
   uCalculo_CupomFiscal in '..\SSNFCe\uCalculo_CupomFiscal.pas',
-  uDmParametros in '..\SSNFCe\uDmParametros.pas' {dmParametros: TDataModule};
+  uDmParametros in '..\SSNFCe\uDmParametros.pas' {dmParametros: TDataModule},
+  UDMCadExtComissao in '..\ssfacil\UDMCadExtComissao.pas' {DMCadExtComissao: TDataModule},
+  UDMGravarFinanceiro in '..\ssfacil\UDMGravarFinanceiro.pas' {DMGravarFinanceiro: TDataModule},
+  uGrava_Erro in '..\ssfacil\uGrava_Erro.pas',
+  USenha in '..\ssfacil\USenha.pas' {frmSenha},
+  uUtilCliente in '..\ssfacil\uUtilCliente.pas',
+  USel_Produto_Preco in '..\ssfacil\USel_Produto_Preco.pas' {frmSel_Produto_Preco};
 
 {$R *.res}
 
